@@ -2,4 +2,9 @@ Avn 123
 Updates got discarded. but i am editing again
 this is crasy yes.. and another update
 yes 4
+<<<<<<< HEAD
 This is the change done by the master branch
+=======
+This is the cahnge done online using the Github online version
+This is new commit from Test Branch
+>>>>>>> testBranch
