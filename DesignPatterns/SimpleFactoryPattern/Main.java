@@ -16,23 +16,23 @@ interface Shape{
   void draw();
 }
 
-class Square implements shape{
+class Square implements Shape{
   
   public void draw(){
     System.out.println("Drawing sq");
   }
 }
 
-class Triangle implements shape{
+class Triangle implements Shape{
   public void draw(){
     System.out.println("Drawing triangle");
   }
 }
 
 class ShapeFactory{
-  public static shape getShape(String s){
-    if(s.equals("Square")) return new square();
-    else if (s.equals("Triangle")) return new triangle();
+  public static Shape getShape(String s){
+    if(s.equals("Square")) return new Square();
+    else if (s.equals("Triangle")) return new Triangle();
     return null;
   }
 }
